@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../chart/gold_4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -5rem;
+}
+
+.heading {
+  font-size: 2rem;
+  color: #ffce2e;
+  margin-top: 1rem;
+}
+
+.donut-chart {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.gold-table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+}
+
+.gold-table th,
+.gold-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  color: #000;
+  background-color: #ddd;
+}
+
+.gold-table th {
+  background-color: #feda60;
+}
+
+.gold-table tr:last-child td {
+  border-bottom: none;
+}
+
+.gold-table tr {
+  animation: fadeInRow 0.5s ease-in-out;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInRow {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.donut-chart {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+}
