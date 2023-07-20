@@ -11,7 +11,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/goldcal" element={<GoldValueCalculator />}></Route>
-          <Route path="/goldcal/chart" element={<DonutCharts />}></Route>
+          <Route path="/chart" element={<DonutCharts />}></Route>
         </Routes>
       </Router>
       <div></div>

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./Gold.css";
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
 
 const GoldValueCalculator = () => {
   const [selectedCarat, setSelectedCarat] = useState("24K");
@@ -52,7 +54,7 @@ const GoldValueCalculator = () => {
     <div className="container">
       <div className="row">
         <div className="col-lg-6 col-sm-12 col-xs-12">
-          <h1 style={{ color: "#ffce2e", marginTop: "1.5rem" }}>
+          <h1 style={{ color: "#ffce2e", marginTop: "5rem" }} className="heading">
             Gold Rate Calculator
           </h1>
           <form>
@@ -105,8 +107,8 @@ const GoldValueCalculator = () => {
           </table>
           <br /> <br />
           <div>
-            <NavLink to="chart" className="Gold_link">
-              Gold Details
+            <NavLink to="/chart" className="Gold_link">
+              Gold Details <FontAwesomeIcon icon={faArrowRight}/>
             </NavLink>
           </div>
         </div>

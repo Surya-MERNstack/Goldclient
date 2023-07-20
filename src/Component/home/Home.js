@@ -11,7 +11,7 @@ const Home = () => {
       </video>
       <div className="content">
         <h1 style={{ color: "#ffd700" }}>Welcome to Gold Value Calculator</h1>
-        <NavLink to="goldcal">Get Started</NavLink>
+        <NavLink to="goldcal">Get Started </NavLink>
       </div>
     </div>
   );

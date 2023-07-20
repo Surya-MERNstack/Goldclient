@@ -1,6 +1,10 @@
 import React from "react";
 import Chart from "react-apexcharts";
 import "./DonutChart.css";
+import { Link } from "react-router-dom";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const DonutCharts = () => {
   const goldRates = {
     "24K": 5106.44,
@@ -46,7 +50,7 @@ const DonutCharts = () => {
 
   return (
     <div className="container">
-      <h1 style={{ color: "#ffce2e", marginTop: "1.5rem" }}>Gold Details</h1>
+      <h1 style={{ color: "#ffce2e", marginTop: "5rem" }}><u style={{color:"#efc848"}}>Gold Details</u></h1>
       <Chart
         options={options}
         series={series}
@@ -68,6 +72,10 @@ const DonutCharts = () => {
         </thead>
         <tbody>{renderTableRows()}</tbody>
       </table>
+      <br/>
+      <div style={{border:"none"}}>
+        <Link to='/goldcal'><FontAwesomeIcon icon={faArrowLeft}/> Back</Link>
+      </div>
     </div>
   );
 };
