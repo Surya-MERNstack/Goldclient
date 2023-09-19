@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #f0f0f0; /* Background color for the login page */
+    background-image: url(../chart/gold_4.jpg); /* Background color for the login page */
     color: #333; /* Text color */
   }
   

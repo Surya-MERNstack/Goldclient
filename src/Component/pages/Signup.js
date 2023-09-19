@@ -77,7 +77,7 @@ const Signup = () => {
 
   return (
     <div className="signup-container">
-      <h2>Sign Up</h2>
+      <h2 style={{color:"black"}}>Sign Up</h2>
       <form onSubmit={handleFormSubmit}>
         <div className="form-group">
           <label htmlFor="name">Username</label>

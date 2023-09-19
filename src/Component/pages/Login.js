@@ -107,10 +107,10 @@ const Login = () => {
         <button className="submit-button" type="submit">
           {isLoading ? <PulseLoader color="#fff" size={9} /> : "Login"}
         </button>
-      </form>
-      <p>
+        <p>
         Don't have an account? <Link to="/">Sign up</Link>
       </p>
+      </form>
     </div>
   );
 };
