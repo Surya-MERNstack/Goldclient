@@ -35,7 +35,7 @@ const GoldValueCalculator = () => {
 
   const saveGoldValue = async () => {
     try {
-      await axios.post("https://goldserver-ivzy.onrender.com/gold-rates", {
+      await axios.post("https://goldserver-ivzy.onrender.com/users/gold-rates", {
         rate: goldRates[selectedCarat],
         carat: selectedCarat,
         weight: gramWeight,
